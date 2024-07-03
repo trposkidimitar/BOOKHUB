@@ -31,6 +31,8 @@ namespace BookHub
         public int Width { get; set; }
         public int Height { get; set; }
 
+        public int CounterOfShapes { get; set; }
+
         public Scene()
         {
             Shapes = new List<Shape>();
@@ -51,6 +53,7 @@ namespace BookHub
         public void AddShape(Shape s)
         {
             Shapes.Add(s);
+            CounterOfShapes++;
         }
 
         public void AddPointToPolygon(Point p)
@@ -60,6 +63,7 @@ namespace BookHub
             {
                 Polygons.Add(CurrentPolygon);
                 CurrentPolygon = new Polygon(this.Thickness);
+                CounterOfShapes++;
             }
         }
 
@@ -69,6 +73,7 @@ namespace BookHub
             {
                 Lines.Add(new Line(LastPoint, point, Color, this.Thickness));
                 LastPoint = new Point();
+                CounterOfShapes++;
             }
             else
             {

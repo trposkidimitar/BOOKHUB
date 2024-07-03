@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace BookHub
 {
@@ -14,11 +15,17 @@ namespace BookHub
     {
         public Scene Scene { get; set; }
         public string ShapeType { get; set; } = "CIRCLE";
+        public int TimeLeft { get; set; }
+
         public DrawingForm()
         {
             InitializeComponent();
             Scene = new Scene();
             this.DoubleBuffered = true;
+            //timer1.Enabled = true;
+            TimeLeft = 300;
+            lblTimer.Text = "05:00";
+            pbTimeLeft.Value = 100;
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,7 +39,7 @@ namespace BookHub
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            /*if (e.Button == MouseButtons.Left)
             {
                 if (ShapeType.Equals("CIRCLE"))
                 {
@@ -60,12 +67,12 @@ namespace BookHub
                 }
             }
 
-            Invalidate();
+            Invalidate();*/
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Scene.Draw(e.Graphics);
+            //Scene.Draw(e.Graphics);
         }
 
         private void circleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -136,9 +143,9 @@ namespace BookHub
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            Scene.UpdateCursor(e.Location);
-            Scene.Cursor = e.Location;
-            Invalidate();
+            //Scene.UpdateCursor(e.Location);
+            //Scene.Cursor = e.Location;
+            //Invalidate();
         }
 
         private void DrawingForm_Load(object sender, EventArgs e)
@@ -281,7 +288,89 @@ namespace BookHub
                 Scene.Thickness = 3;
                 toolStripMenuItem9.Checked = true;
             }
-            Invalidate();
+        }
+
+        private void pnlDraw_Paint(object sender, PaintEventArgs e)
+        {
+            Scene.Draw(e.Graphics);
+            //DoubleBuffered = true;
+        }
+
+        private void pnlDraw_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    if (ShapeType.Equals("CIRCLE"))
+                    {
+                        Scene.AddShape(new Circle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                    }
+                    else if (ShapeType.Equals("SQUARE"))
+                    {
+                        Scene.AddShape(new Square(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                    }
+                    else if (ShapeType.Equals("RECTANGLE"))
+                    {
+                        Scene.AddShape(new Rectangle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                    }
+                    else if (ShapeType.Equals("TRIANGLE"))
+                    {
+                        Scene.AddShape(new Triangle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                    }
+                    else if (ShapeType.Equals("LINE"))
+                    {
+                        Scene.AddPointToLine(e.Location);
+                    }
+                    else if (ShapeType.Equals("POLYGON"))
+                    {
+                        Scene.AddPointToPolygon(e.Location);
+                    }
+                }
+
+                lblNumShapes.Text = "Total number of shapes used: " + Scene.CounterOfShapes;
+                pnlDraw.Invalidate();
+            }
+        }
+
+        private void pnlDraw_MouseMove(object sender, MouseEventArgs e)
+        {
+            Scene.UpdateCursor(e.Location);
+            Scene.Cursor = e.Location;
+            pnlDraw.Invalidate();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (TimeLeft == 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / 300.0) * 100) + ".");
+                this.Close();
+            }
+            else
+            {
+                TimeLeft--;
+
+                int minutes = TimeLeft / 60;
+                int seconds = TimeLeft % 60;
+
+                lblTimer.Text = $"{minutes}:{seconds}";
+
+                pbTimeLeft.Value = (int)(100.0 * (TimeLeft / 300.0));
+            }
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / (300.0 - TimeLeft)) * 100) + ".");
+            this.Close();
         }
     }
 }

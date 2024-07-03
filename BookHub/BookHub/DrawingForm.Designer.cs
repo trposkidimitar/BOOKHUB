@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrawingForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,6 +79,15 @@
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.lblBookTitle = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.pbTimeLeft = new System.Windows.Forms.ProgressBar();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnEnd = new System.Windows.Forms.Button();
+            this.lblNumShapes = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlDraw = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -483,11 +493,105 @@
             this.toolStripTextBox2.Size = new System.Drawing.Size(100, 27);
             this.toolStripTextBox2.TextChanged += new System.EventHandler(this.toolStripTextBox2_TextChanged);
             // 
+            // lblBookTitle
+            // 
+            this.lblBookTitle.AutoSize = true;
+            this.lblBookTitle.Font = new System.Drawing.Font("Times New Roman", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookTitle.Location = new System.Drawing.Point(935, 70);
+            this.lblBookTitle.Name = "lblBookTitle";
+            this.lblBookTitle.Size = new System.Drawing.Size(135, 67);
+            this.lblBookTitle.TabIndex = 1;
+            this.lblBookTitle.Text = "Title";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(833, 197);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(98, 39);
+            this.lblTimer.TabIndex = 2;
+            this.lblTimer.Text = "Timer";
+            // 
+            // pbTimeLeft
+            // 
+            this.pbTimeLeft.Location = new System.Drawing.Point(840, 239);
+            this.pbTimeLeft.Name = "pbTimeLeft";
+            this.pbTimeLeft.Size = new System.Drawing.Size(332, 38);
+            this.pbTimeLeft.TabIndex = 3;
+            // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(840, 296);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(126, 56);
+            this.btnStart.TabIndex = 4;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnEnd
+            // 
+            this.btnEnd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnd.Location = new System.Drawing.Point(1046, 296);
+            this.btnEnd.Name = "btnEnd";
+            this.btnEnd.Size = new System.Drawing.Size(126, 56);
+            this.btnEnd.TabIndex = 5;
+            this.btnEnd.Text = "End";
+            this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
+            // 
+            // lblNumShapes
+            // 
+            this.lblNumShapes.AutoSize = true;
+            this.lblNumShapes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumShapes.Location = new System.Drawing.Point(836, 371);
+            this.lblNumShapes.Name = "lblNumShapes";
+            this.lblNumShapes.Size = new System.Drawing.Size(219, 19);
+            this.lblNumShapes.TabIndex = 6;
+            this.lblNumShapes.Text = "Total number of shapes used: 0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(769, 635);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(434, 19);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "*правилата на играта можете да ги најдете во секцијата Help";
+            // 
+            // pnlDraw
+            // 
+            this.pnlDraw.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDraw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlDraw.Location = new System.Drawing.Point(169, 42);
+            this.pnlDraw.Name = "pnlDraw";
+            this.pnlDraw.Size = new System.Drawing.Size(460, 602);
+            this.pnlDraw.TabIndex = 8;
+            this.pnlDraw.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDraw_Paint);
+            this.pnlDraw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlDraw_MouseClick);
+            this.pnlDraw.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDraw_MouseMove);
+            // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 672);
+            this.Controls.Add(this.pnlDraw);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblNumShapes);
+            this.Controls.Add(this.btnEnd);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.pbTimeLeft);
+            this.Controls.Add(this.lblTimer);
+            this.Controls.Add(this.lblBookTitle);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DrawingForm";
@@ -554,6 +658,15 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.Label lblBookTitle;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.ProgressBar pbTimeLeft;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnEnd;
+        private System.Windows.Forms.Label lblNumShapes;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlDraw;
     }
 }
 
