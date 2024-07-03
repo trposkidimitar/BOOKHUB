@@ -8,3 +8,14 @@ D:\ФИНКИ\IV-семестар\Визуелно програмирање\Visu
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.exe
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.pdb
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe.config
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.pdb
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.AssemblyReference.cache
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.Form1.resources
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.PocetnaForma.resources
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.Properties.Resources.resources
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.GenerateResource.cache
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.exe
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.pdb
