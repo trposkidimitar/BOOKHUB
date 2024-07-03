@@ -11,13 +11,17 @@ namespace BookHub
     public class Polygon
     {
         public List<Point> Points { get; set; }
+        public int Thickness { get; set; } 
+        public Color Color { get; set; }
         public bool IsClosed { get; set; } = false;
         public bool IsCloseToStart { get; set; } = false;
         public Point Cursor { get; set; } = new Point();
 
-        public Polygon()
+        public Polygon(int thickness)
         {
             Points = new List<Point>();
+            Color = Color.Black;
+            Thickness = thickness;
         }
 
         public void AddPointToPolygon(Point p)
@@ -54,8 +58,8 @@ namespace BookHub
 
         public void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color.Black, 2);
-            Brush brush = new SolidBrush(Color.Blue);
+            Pen pen = new Pen(Color, Thickness);
+            Brush brush = new SolidBrush(Color.White);
             Pen dashedPen = new Pen(Color.Black, 1);
             dashedPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
 

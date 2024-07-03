@@ -25,6 +25,10 @@ namespace BookHub
 
         public void Draw(Graphics g)
         {
+            if (Color == Color.White)
+            {
+                Color = Color.Black;
+            }
             Pen p = new Pen(Color, Thickness);
             g.DrawLine(p, Left, Right);
             p.Dispose();

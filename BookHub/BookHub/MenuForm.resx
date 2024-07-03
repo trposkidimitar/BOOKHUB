@@ -121,7 +121,7 @@
   <data name="btnBiblioteka.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAABTBJREFUeF7t3V3o/vMdx/G/seVmczfUcrCWURw4IOzEwYSd7ohSTqwmRXKf+ya2
+        vwAADr8BOAVTJAAABTBJREFUeF7t3V3o/vMdx/G/seVmczfUcrCWURw4IOzEwYSd7ohSTqwmRXKf+ya2
         uRlFodBwJBSOyNwtESklimG5mbmJMGOY29e7/gdXvz4X31+/7/W/vt/v9XjU88zR5+rt//vefT6bAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADo37ZpBy2tHdOP0w8SA3NEei/9V0vr
         /+mT9I90WfpZYiDuSN9oUL2Z9ksMwFWp9SNpuT2dtk4s2W7pD+nyzV2ZPk+tH01btsMSA/PD9Hb6WAvt
@@ -146,10 +146,10 @@
         AAAAAAAAAAAAAAAAAAAAAAD6sGnTt6WvLbRR/Jf5AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnGame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAADzhJREFUeF7tnQesPFUZR7Fi72LD3gtiF8WuRGygoIIVC1FQCSrW2MWSKLG32CJW
+        vwAADr8BOAVTJAAADzhJREFUeF7tnQesPFUZR7Fi72LD3gtiF8WuRGygoIIVC1FQCSrW2MWSKLG32CJW
         FCuoiQVFbIhYsWFDxd472NDfCf+Nm5s7s7tT9u3bd05ygkF2dt/M3Ln3fve732wnIiIiIiIiIiIiIiIi
         IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLSwi7x
         0HhgvAD/QkTOZI94evzvNo+L20cRCcfESePAM+KuUWTLc9Z4UpxuILhXFNnyNDWQvaPIlscGItLC2aIN

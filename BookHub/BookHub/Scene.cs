@@ -21,10 +21,12 @@ namespace BookHub
         public Shape SelectedShape { get; set; }
         public Polygon CurrentPolygon { get; set; }
         public Point LastPoint { get; set; }
-        public Color Color { get; set; }
         public Point Cursor { get; set; }
 
+        public Color Color { get; set; }
+        public int Size { get; set; }
         public int Thickness { get; set; }
+
         public bool Positioner { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
@@ -36,10 +38,11 @@ namespace BookHub
             Lines = new List<Line>();
             LineUndoRedo = new Stack<Line>();
             SelectedShape = null;
-            CurrentPolygon = new Polygon();
+            CurrentPolygon = new Polygon(Thickness);
             LastPoint = Point.Empty;
-            Color = Color.Red;
-            Thickness = 1;
+            Color = Color.White;
+            Size = 30;
+            Thickness = 3;
             Positioner = false;
             this.Width = Width;
             this.Height = Height;
@@ -56,7 +59,7 @@ namespace BookHub
             if (CurrentPolygon.IsClosed)
             {
                 Polygons.Add(CurrentPolygon);
-                CurrentPolygon = new Polygon();
+                CurrentPolygon = new Polygon(this.Thickness);
             }
         }
 
@@ -64,7 +67,7 @@ namespace BookHub
         {
             if (!LastPoint.IsEmpty)
             {
-                Lines.Add(new Line(LastPoint, point, Color, Thickness));
+                Lines.Add(new Line(LastPoint, point, Color, this.Thickness));
                 LastPoint = new Point();
             }
             else
