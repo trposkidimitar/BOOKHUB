@@ -1,0 +1,10 @@
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\bin\Debug\BookHub.exe.config
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\bin\Debug\BookHub.exe
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\bin\Debug\BookHub.pdb
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.csproj.AssemblyReference.cache
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.Form1.resources
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.Properties.Resources.resources
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.csproj.GenerateResource.cache
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.exe
+D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.pdb
