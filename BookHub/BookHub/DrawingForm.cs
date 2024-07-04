@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Reflection.Emit;
+
 
 namespace BookHub
 {
@@ -512,82 +507,6 @@ namespace BookHub
         {
             this.Close();
         }
-
-        /*private async Task<string> GenerateBookTitleAsync()
-        {
-            try
-            {
-                // Replace with your API endpoint and key
-                string apiEndpoint = "https://api.openai.com/v1/engines/davinci-codex/completions";
-                string apiKey = "YOUR_API_KEY";
-
-                // Set up the request payload
-                var payload = new
-                {
-                    prompt = "Generate a creative book title:",
-                    max_tokens = 10
-                };
-
-                // Set up the request
-                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
-                var response = await client.PostAsJsonAsync(apiEndpoint, payload);
-                response.EnsureSuccessStatusCode();
-
-                // Get the response content
-                var result = await response.Content.ReadAsAsync<dynamic>();
-                string bookTitle = result.choices[0].text;
-
-                return bookTitle.Trim();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error generating book title: " + ex.Message);
-                return "Error generating book title";
-            }
-        }*/
-
-        /*private async Task<string> GenerateBookTitleAsync()
-        {
-            try
-            {
-                string apiEndpoint = "https://api.openai.com/v1/completions";
-                string apiKey = "sk-proj-EZw5fP45qkAUwckdCX4lT3BlbkFJ1xb5L5NJi8FkMx8HbPtT";  // Replace with your actual API key
-
-                var payload = new
-                {
-                    model = "gpt-3.5",
-                    prompt = "Generate a creative book title:",
-                    max_tokens = 10,
-                    temperature = 0.7  // Adding temperature for more creative responses
-                };
-
-                string jsonPayload = Newtonsoft.Json.JsonConvert.SerializeObject(payload);
-
-                client.DefaultRequestHeaders.Clear();
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
-                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync(apiEndpoint, content);
-
-                if (!response.IsSuccessStatusCode)
-                {
-                    string errorContent = await response.Content.ReadAsStringAsync();
-                    MessageBox.Show("Error generating book title: " + errorContent);
-                    return "Error generating book title";
-                }
-
-                var result = await response.Content.ReadAsStringAsync();
-                dynamic jsonResult = Newtonsoft.Json.JsonConvert.DeserializeObject(result);
-                string bookTitle = jsonResult.choices[0].text;
-
-                return bookTitle.Trim();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error generating book title: " + ex.Message);
-                return "Error generating book title";
-            }
-        }*/
 
         private string GenerateBookTitle()
         {
