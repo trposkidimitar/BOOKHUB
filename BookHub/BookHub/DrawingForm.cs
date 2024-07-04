@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Reflection.Emit;
 
 namespace BookHub
 {
+    [Serializable]
     public partial class DrawingForm : Form
     {
+        private static readonly HttpClient client = new HttpClient();
         public Scene Scene { get; set; }
         public string ShapeType { get; set; } = "CIRCLE";
         public int TimeLeft { get; set; }
@@ -26,6 +34,99 @@ namespace BookHub
             TimeLeft = 300;
             lblTimer.Text = "05:00";
             pbTimeLeft.Value = 100;
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            string bookTitle = GenerateBookTitle();
+            lblBookTitle.Text = bookTitle;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (TimeLeft == 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / 300.0) * 100) + ".");
+                this.Close();
+            }
+            else
+            {
+                TimeLeft--;
+
+                int minutes = TimeLeft / 60;
+                int seconds = TimeLeft % 60;
+
+                lblTimer.Text = $"{minutes}:{seconds}";
+
+                pbTimeLeft.Value = (int)(100.0 * (TimeLeft / 300.0));
+            }
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / (300.0 - TimeLeft)) * 100) + ".");
+            this.Close();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Game should be played...");
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Scene.ShapeTypes.Count > 0)
+            {
+                if (Scene.ShapeTypes.Peek().Equals("Shape"))
+                {
+                    Scene.ShapeUndo();
+                }
+                else if (Scene.ShapeTypes.Peek().Equals("Line"))
+                {
+                    Scene.LineUndo();
+                }
+                else if (Scene.ShapeTypes.Peek().Equals("Polygon"))
+                {
+                    Scene.PolygonUndo();
+                }
+                Scene.ShapeTypesRedo.Push(Scene.ShapeTypes.Pop());
+            }
+
+            if (Scene.CounterOfShapes > 0)
+            {
+                lblNumShapes.Text = "Total number of shapes used: " + --Scene.CounterOfShapes;
+            }
+            pnlDraw.Invalidate();
+        }
+
+        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Scene.ShapeTypesRedo.Count > 0)
+            {
+                if (Scene.ShapeTypesRedo.Peek().Equals("Shape"))
+                {
+                    Scene.ShapeRedo();
+                }
+                else if (Scene.ShapeTypesRedo.Peek().Equals("Line"))
+                {
+                    Scene.LineRedo();
+                }
+                else if (Scene.ShapeTypesRedo.Peek().Equals("Polygon"))
+                {
+                    Scene.PolygonRedo();
+                }
+                Scene.ShapeTypes.Push(Scene.ShapeTypesRedo.Pop());
+            }
+
+
+            if (Scene.CounterOfShapes < Scene.Lines.Count + Scene.Shapes.Count + Scene.Polygons.Count)
+            {
+                lblNumShapes.Text = "Total number of shapes used: " + ++Scene.CounterOfShapes;
+            }
+            pnlDraw.Invalidate();
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -305,26 +406,32 @@ namespace BookHub
                     if (ShapeType.Equals("CIRCLE"))
                     {
                         Scene.AddShape(new Circle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                        Scene.ShapeTypes.Push("Shape");
                     }
                     else if (ShapeType.Equals("SQUARE"))
                     {
                         Scene.AddShape(new Square(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                        Scene.ShapeTypes.Push("Shape");
                     }
                     else if (ShapeType.Equals("RECTANGLE"))
                     {
                         Scene.AddShape(new Rectangle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                        Scene.ShapeTypes.Push("Shape");
                     }
                     else if (ShapeType.Equals("TRIANGLE"))
                     {
                         Scene.AddShape(new Triangle(Scene.Color, e.Location, Scene.Size, Scene.Thickness));
+                        Scene.ShapeTypes.Push("Shape");
                     }
                     else if (ShapeType.Equals("LINE"))
                     {
                         Scene.AddPointToLine(e.Location);
+                        Scene.ShapeTypes.Push("Line");
                     }
                     else if (ShapeType.Equals("POLYGON"))
                     {
                         Scene.AddPointToPolygon(e.Location);
+                        Scene.ShapeTypes.Push("Polygon");
                     }
                 }
 
@@ -340,37 +447,158 @@ namespace BookHub
             pnlDraw.Invalidate();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void SaveScene(string path)
         {
-            timer1.Start();
+            FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+            IFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(fs, Scene);
+
+            fs.Close();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void OpenScene(string path)
         {
-            if (TimeLeft == 0)
+            FileStream fs = new FileStream(path, FileMode.Open);
+            IFormatter formatter = new BinaryFormatter();
+            Scene = (Scene)formatter.Deserialize(fs);
+
+            fs.Close();
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Scene = new Scene();
+            this.DoubleBuffered = true;
+            TimeLeft = 300;
+            lblTimer.Text = "05:00";
+            pbTimeLeft.Value = 100;
+            timer1.Enabled = false;
+            Scene.CounterOfShapes = 0;
+            lblNumShapes.Text = "Total number of shapes: " + Scene.CounterOfShapes;
+            Invalidate();
+            pnlDraw.Invalidate();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                timer1.Stop();
-                MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / 300.0) * 100) + ".");
-                this.Close();
+                OpenScene(openFileDialog.FileName);
             }
-            else
+            Invalidate();
+            pnlDraw.Invalidate();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                TimeLeft--;
-
-                int minutes = TimeLeft / 60;
-                int seconds = TimeLeft % 60;
-
-                lblTimer.Text = $"{minutes}:{seconds}";
-
-                pbTimeLeft.Value = (int)(100.0 * (TimeLeft / 300.0));
+                SaveScene(saveFileDialog.FileName);
             }
         }
 
-        private void btnEnd_Click(object sender, EventArgs e)
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / (300.0 - TimeLeft)) * 100) + ".");
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                SaveScene(saveFileDialog.FileName);
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             this.Close();
+        }
+
+        /*private async Task<string> GenerateBookTitleAsync()
+        {
+            try
+            {
+                // Replace with your API endpoint and key
+                string apiEndpoint = "https://api.openai.com/v1/engines/davinci-codex/completions";
+                string apiKey = "YOUR_API_KEY";
+
+                // Set up the request payload
+                var payload = new
+                {
+                    prompt = "Generate a creative book title:",
+                    max_tokens = 10
+                };
+
+                // Set up the request
+                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
+                var response = await client.PostAsJsonAsync(apiEndpoint, payload);
+                response.EnsureSuccessStatusCode();
+
+                // Get the response content
+                var result = await response.Content.ReadAsAsync<dynamic>();
+                string bookTitle = result.choices[0].text;
+
+                return bookTitle.Trim();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating book title: " + ex.Message);
+                return "Error generating book title";
+            }
+        }*/
+
+        /*private async Task<string> GenerateBookTitleAsync()
+        {
+            try
+            {
+                string apiEndpoint = "https://api.openai.com/v1/completions";
+                string apiKey = "sk-proj-EZw5fP45qkAUwckdCX4lT3BlbkFJ1xb5L5NJi8FkMx8HbPtT";  // Replace with your actual API key
+
+                var payload = new
+                {
+                    model = "gpt-3.5",
+                    prompt = "Generate a creative book title:",
+                    max_tokens = 10,
+                    temperature = 0.7  // Adding temperature for more creative responses
+                };
+
+                string jsonPayload = Newtonsoft.Json.JsonConvert.SerializeObject(payload);
+
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync(apiEndpoint, content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    string errorContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show("Error generating book title: " + errorContent);
+                    return "Error generating book title";
+                }
+
+                var result = await response.Content.ReadAsStringAsync();
+                dynamic jsonResult = Newtonsoft.Json.JsonConvert.DeserializeObject(result);
+                string bookTitle = jsonResult.choices[0].text;
+
+                return bookTitle.Trim();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating book title: " + ex.Message);
+                return "Error generating book title";
+            }
+        }*/
+
+        private string GenerateBookTitle()
+        {
+            string[] adjectives = { "Amazing", "Incredible", "Mysterious", "Enchanting", "Fantastic", "Majestic", "Brilliant", "Secret", "Ancient", "Modern" };
+            string[] nouns = { "Adventure", "Journey", "Quest", "Saga", "Chronicle", "Tale", "Story", "Mystery", "Legend", "Odyssey" };
+
+            Random random = new Random();
+            string adjective = adjectives[random.Next(adjectives.Length)];
+            string noun = nouns[random.Next(nouns.Length)];
+
+            return $"{adjective} {noun}";
         }
     }
 }

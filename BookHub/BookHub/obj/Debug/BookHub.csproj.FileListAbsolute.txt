@@ -22,11 +22,14 @@ C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.pdb
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.exe.config
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.exe
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.pdb
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\Newtonsoft.Json.xml
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.AssemblyReference.cache
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.DrawingForm.resources
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.MenuForm.resources
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.Properties.Resources.resources
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.GenerateResource.cache
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.Up2Date
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.exe
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.pdb
