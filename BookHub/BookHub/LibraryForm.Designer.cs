@@ -50,11 +50,11 @@
             this.sportFitnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cookbooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.socialAndHumanisticSciencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.economyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.scienceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.economyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.artToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.musicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filmThToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +68,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuStrip1.BackgroundImage")));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.literatureToolStripMenuItem,
@@ -90,6 +91,7 @@
             this.modernLiteratureToolStripMenuItem,
             this.classicsToolStripMenuItem,
             this.dramaToolStripMenuItem});
+            this.literatureToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.literatureToolStripMenuItem.Name = "literatureToolStripMenuItem";
             this.literatureToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.literatureToolStripMenuItem.Text = "Literature";
@@ -97,19 +99,19 @@
             // modernLiteratureToolStripMenuItem
             // 
             this.modernLiteratureToolStripMenuItem.Name = "modernLiteratureToolStripMenuItem";
-            this.modernLiteratureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.modernLiteratureToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.modernLiteratureToolStripMenuItem.Text = "Modern literature";
             // 
             // classicsToolStripMenuItem
             // 
             this.classicsToolStripMenuItem.Name = "classicsToolStripMenuItem";
-            this.classicsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.classicsToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.classicsToolStripMenuItem.Text = "Classics";
             // 
             // dramaToolStripMenuItem
             // 
             this.dramaToolStripMenuItem.Name = "dramaToolStripMenuItem";
-            this.dramaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dramaToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.dramaToolStripMenuItem.Text = "Drama";
             // 
             // novelsToolStripMenuItem
@@ -122,6 +124,7 @@
             this.comedyToolStripMenuItem,
             this.scienceFictionFantasyToolStripMenuItem,
             this.historicFictionToolStripMenuItem});
+            this.novelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.novelsToolStripMenuItem.Name = "novelsToolStripMenuItem";
             this.novelsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.novelsToolStripMenuItem.Text = "Novels";
@@ -174,6 +177,7 @@
             this.postryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.macedonianPoetryToolStripMenuItem,
             this.foreignPoetryToolStripMenuItem});
+            this.postryToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.postryToolStripMenuItem.Name = "postryToolStripMenuItem";
             this.postryToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.postryToolStripMenuItem.Text = "Poetry";
@@ -181,13 +185,13 @@
             // macedonianPoetryToolStripMenuItem
             // 
             this.macedonianPoetryToolStripMenuItem.Name = "macedonianPoetryToolStripMenuItem";
-            this.macedonianPoetryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.macedonianPoetryToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.macedonianPoetryToolStripMenuItem.Text = "Macedonian Poetry";
             // 
             // foreignPoetryToolStripMenuItem
             // 
             this.foreignPoetryToolStripMenuItem.Name = "foreignPoetryToolStripMenuItem";
-            this.foreignPoetryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.foreignPoetryToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.foreignPoetryToolStripMenuItem.Text = "Foreign poetry";
             // 
             // lifestyleToolStripMenuItem
@@ -196,6 +200,7 @@
             this.travelToolStripMenuItem,
             this.sportFitnessToolStripMenuItem,
             this.cookbooksToolStripMenuItem});
+            this.lifestyleToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lifestyleToolStripMenuItem.Name = "lifestyleToolStripMenuItem";
             this.lifestyleToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.lifestyleToolStripMenuItem.Text = "Lifestyle";
@@ -203,19 +208,19 @@
             // travelToolStripMenuItem
             // 
             this.travelToolStripMenuItem.Name = "travelToolStripMenuItem";
-            this.travelToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.travelToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.travelToolStripMenuItem.Text = "Travel";
             // 
             // sportFitnessToolStripMenuItem
             // 
             this.sportFitnessToolStripMenuItem.Name = "sportFitnessToolStripMenuItem";
-            this.sportFitnessToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sportFitnessToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.sportFitnessToolStripMenuItem.Text = "Sport && Fitness";
             // 
             // cookbooksToolStripMenuItem
             // 
             this.cookbooksToolStripMenuItem.Name = "cookbooksToolStripMenuItem";
-            this.cookbooksToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cookbooksToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.cookbooksToolStripMenuItem.Text = "Cookbooks";
             // 
             // socialAndHumanisticSciencesToolStripMenuItem
@@ -223,15 +228,29 @@
             this.socialAndHumanisticSciencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.economyToolStripMenuItem,
             this.otherToolStripMenuItem1});
+            this.socialAndHumanisticSciencesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.socialAndHumanisticSciencesToolStripMenuItem.Name = "socialAndHumanisticSciencesToolStripMenuItem";
             this.socialAndHumanisticSciencesToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.socialAndHumanisticSciencesToolStripMenuItem.Text = "Social && Humanistic Sciences";
+            // 
+            // economyToolStripMenuItem
+            // 
+            this.economyToolStripMenuItem.Name = "economyToolStripMenuItem";
+            this.economyToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.economyToolStripMenuItem.Text = "Economy";
+            // 
+            // otherToolStripMenuItem1
+            // 
+            this.otherToolStripMenuItem1.Name = "otherToolStripMenuItem1";
+            this.otherToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
+            this.otherToolStripMenuItem1.Text = "Other";
             // 
             // scienceToolStripMenuItem
             // 
             this.scienceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medicineToolStripMenuItem,
             this.otherToolStripMenuItem});
+            this.scienceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.scienceToolStripMenuItem.Name = "scienceToolStripMenuItem";
             this.scienceToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.scienceToolStripMenuItem.Text = "Science";
@@ -239,26 +258,14 @@
             // medicineToolStripMenuItem
             // 
             this.medicineToolStripMenuItem.Name = "medicineToolStripMenuItem";
-            this.medicineToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.medicineToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.medicineToolStripMenuItem.Text = "Medicine";
             // 
             // otherToolStripMenuItem
             // 
             this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
-            this.otherToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.otherToolStripMenuItem.Text = "Other";
-            // 
-            // economyToolStripMenuItem
-            // 
-            this.economyToolStripMenuItem.Name = "economyToolStripMenuItem";
-            this.economyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.economyToolStripMenuItem.Text = "Economy";
-            // 
-            // otherToolStripMenuItem1
-            // 
-            this.otherToolStripMenuItem1.Name = "otherToolStripMenuItem1";
-            this.otherToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.otherToolStripMenuItem1.Text = "Other";
             // 
             // artToolStripMenuItem
             // 
@@ -266,6 +273,7 @@
             this.musicToolStripMenuItem,
             this.filmThToolStripMenuItem,
             this.architectureToolStripMenuItem});
+            this.artToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.artToolStripMenuItem.Name = "artToolStripMenuItem";
             this.artToolStripMenuItem.Size = new System.Drawing.Size(43, 24);
             this.artToolStripMenuItem.Text = "Art";
@@ -273,19 +281,19 @@
             // musicToolStripMenuItem
             // 
             this.musicToolStripMenuItem.Name = "musicToolStripMenuItem";
-            this.musicToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.musicToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.musicToolStripMenuItem.Text = "Music";
             // 
             // filmThToolStripMenuItem
             // 
             this.filmThToolStripMenuItem.Name = "filmThToolStripMenuItem";
-            this.filmThToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.filmThToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.filmThToolStripMenuItem.Text = "Film && Stagecraft";
             // 
             // architectureToolStripMenuItem
             // 
             this.architectureToolStripMenuItem.Name = "architectureToolStripMenuItem";
-            this.architectureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.architectureToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.architectureToolStripMenuItem.Text = "Architecture";
             // 
             // dictionaryToolStripMenuItem
@@ -293,6 +301,7 @@
             this.dictionaryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.encyclopediaLexiconToolStripMenuItem,
             this.journalMagazineToolStripMenuItem});
+            this.dictionaryToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dictionaryToolStripMenuItem.Name = "dictionaryToolStripMenuItem";
             this.dictionaryToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.dictionaryToolStripMenuItem.Text = "Dictionary && Encyclopedia";
@@ -325,6 +334,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 672);
             this.Controls.Add(this.btnGame);
             this.Controls.Add(this.menuStrip1);

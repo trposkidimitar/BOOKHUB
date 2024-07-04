@@ -8,6 +8,7 @@ using System.Runtime.Serialization;
 using System.Windows.Forms;
 
 using System.Net.Http;
+using System.Reflection;
 
 
 namespace BookHub
@@ -20,6 +21,9 @@ namespace BookHub
         public string ShapeType { get; set; } = "CIRCLE";
         public int TimeLeft { get; set; }
 
+        //Панел
+        private Panel myPanel;
+
         public DrawingForm()
         {
             InitializeComponent();
@@ -29,7 +33,35 @@ namespace BookHub
             TimeLeft = 300;
             lblTimer.Text = "05:00";
             pbTimeLeft.Value = 100;
+
+
+            //За дупло баферирање на панелот
+            myPanel=pnlDraw;
+            this.Controls.Add(myPanel);
+            EnableDoubleBuffering(pnlDraw);
         }
+
+        //Функција за баферирање
+        private void EnableDoubleBuffering(Panel panel)
+        {
+            typeof(Panel).InvokeMember("SetStyle",
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod,
+                null, panel, new object[] { ControlStyles.OptimizedDoubleBuffer, true });
+
+            typeof(Panel).InvokeMember("SetStyle",
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod,
+                null, panel, new object[] { ControlStyles.AllPaintingInWmPaint, true });
+
+            typeof(Panel).InvokeMember("SetStyle",
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod,
+                null, panel, new object[] { ControlStyles.UserPaint, true });
+
+            typeof(Panel).InvokeMember("UpdateStyles",
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod,
+                null, panel, null);
+        }
+
+
 
         private void btnStart_Click(object sender, EventArgs e)
         {
