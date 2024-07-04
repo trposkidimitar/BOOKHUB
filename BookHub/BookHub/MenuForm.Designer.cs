@@ -34,6 +34,7 @@
             this.btnGame = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnAboutUS = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.btnBiblioteka.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnBiblioteka.ForeColor = System.Drawing.Color.Black;
             this.btnBiblioteka.Image = ((System.Drawing.Image)(resources.GetObject("btnBiblioteka.Image")));
-            this.btnBiblioteka.Location = new System.Drawing.Point(113, 192);
+            this.btnBiblioteka.Location = new System.Drawing.Point(102, 169);
             this.btnBiblioteka.Name = "btnBiblioteka";
             this.btnBiblioteka.Size = new System.Drawing.Size(230, 200);
             this.btnBiblioteka.TabIndex = 0;
@@ -58,7 +59,7 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(108, 30);
+            this.lblName.Location = new System.Drawing.Point(94, 30);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(682, 136);
             this.lblName.TabIndex = 2;
@@ -70,7 +71,7 @@
             this.btnGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnGame.ForeColor = System.Drawing.Color.Black;
             this.btnGame.Image = ((System.Drawing.Image)(resources.GetObject("btnGame.Image")));
-            this.btnGame.Location = new System.Drawing.Point(542, 192);
+            this.btnGame.Location = new System.Drawing.Point(524, 169);
             this.btnGame.Name = "btnGame";
             this.btnGame.Size = new System.Drawing.Size(230, 200);
             this.btnGame.TabIndex = 3;
@@ -82,6 +83,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Controls.Add(this.btnAboutUS);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.btnGame);
@@ -95,13 +97,25 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(345, 426);
+            this.button1.Location = new System.Drawing.Point(342, 435);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 54);
             this.button1.TabIndex = 4;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAboutUS
+            // 
+            this.btnAboutUS.BackColor = System.Drawing.Color.Gray;
+            this.btnAboutUS.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAboutUS.Location = new System.Drawing.Point(342, 375);
+            this.btnAboutUS.Name = "btnAboutUS";
+            this.btnAboutUS.Size = new System.Drawing.Size(194, 54);
+            this.btnAboutUS.TabIndex = 5;
+            this.btnAboutUS.Text = "About Us";
+            this.btnAboutUS.UseVisualStyleBackColor = false;
+            this.btnAboutUS.Click += new System.EventHandler(this.btnAboutUS_Click);
             // 
             // MenuForm
             // 
@@ -111,6 +125,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 672);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1280, 719);
+            this.MinimumSize = new System.Drawing.Size(1280, 719);
             this.Name = "MenuForm";
             this.Text = "BookHub";
             this.Load += new System.EventHandler(this.MenuForm_Load);
@@ -127,5 +143,6 @@
         private System.Windows.Forms.Button btnGame;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAboutUS;
     }
 }

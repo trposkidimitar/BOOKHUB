@@ -340,6 +340,8 @@
             this.Controls.Add(this.btnGame);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(1280, 719);
+            this.MinimumSize = new System.Drawing.Size(1280, 719);
             this.Name = "LibraryForm";
             this.Text = "Library";
             this.menuStrip1.ResumeLayout(false);
