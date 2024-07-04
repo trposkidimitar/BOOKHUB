@@ -26,6 +26,12 @@ namespace BookHub
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
+            LibraryForm libraryForm = new LibraryForm();
+            libraryForm.ShowDialog();
+        }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

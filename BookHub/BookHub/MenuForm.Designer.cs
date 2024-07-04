@@ -88,6 +88,7 @@
             this.Controls.Add(this.btnBiblioteka);
             this.Name = "MenuForm";
             this.Text = "BookHub";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

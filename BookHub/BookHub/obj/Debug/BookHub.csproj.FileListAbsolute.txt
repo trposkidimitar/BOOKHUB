@@ -33,3 +33,4 @@ C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.Cor
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.Up2Date
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.exe
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.pdb
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.LibraryForm.resources
