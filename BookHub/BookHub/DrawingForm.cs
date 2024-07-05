@@ -18,10 +18,10 @@ namespace BookHub
     {
         private static readonly HttpClient client = new HttpClient();
         public Scene Scene { get; set; }
+        public Shape SelectedShape { get; set; } = null;
         public string ShapeType { get; set; } = "CIRCLE";
         public int TimeLeft { get; set; }
 
-        //Панел
         private Panel myPanel;
 
         public DrawingForm()
@@ -34,14 +34,13 @@ namespace BookHub
             lblTimer.Text = "05:00";
             pbTimeLeft.Value = 100;
 
+            lblWarning.Text = "If you prefer the form to be in a color other than white,\nselect your desired color before drawing the form.";
 
-            //За дупло баферирање на панелот
-            myPanel=pnlDraw;
+            myPanel = pnlDraw;
             this.Controls.Add(myPanel);
             EnableDoubleBuffering(pnlDraw);
         }
 
-        //Функција за баферирање
         private void EnableDoubleBuffering(Panel panel)
         {
             typeof(Panel).InvokeMember("SetStyle",
@@ -100,7 +99,17 @@ namespace BookHub
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Game should be played...");
+            string message = "Game Objective\n\n" +
+            "Every book leaves a first impression through its cover. Therefore, we've created a game in our small library where you can unleash your imagination and creativity to design the perfect cover for a given Title. The game includes a Title and a timer to evaluate the speed of your creativity and imagination in the world of books. With each new Title, you discover a new aspect of creating your own book. At the end of the game, you receive a score based on the forms used and the time spent creating the cover.\n\n" +
+            "How to play\n\n" +
+            "To start the game, press the green Start button. Starting the game will assign you a Title for which you'll need to draw the cover. Pressing Start allows you to draw on the white panel which was previously inactive.\n" +
+            "If you want to change the shape you're drawing with, you can do so in the Shapes section.\n" +
+            "To adjust the line thickness for drawing shapes, visit the Thickness section.\n" +
+            "You can also change the color of the shapes by pressing the Color section, which opens a menu where you can select the color for coloring the shapes you're currently drawing.\n" +
+            "If you finish before the timer runs out, you can end the game and receive a higher score by pressing the red End button.\n\n" +
+            "Note: If you prefer the form to be in a color other than white, select your desired color before drawing the form.";
+
+            MessageBox.Show(message, "Game Rules", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -421,7 +430,6 @@ namespace BookHub
         private void pnlDraw_Paint(object sender, PaintEventArgs e)
         {
             Scene.Draw(e.Graphics);
-            //DoubleBuffered = true;
         }
 
         private void pnlDraw_MouseClick(object sender, MouseEventArgs e)
@@ -460,6 +468,10 @@ namespace BookHub
                         Scene.AddPointToPolygon(e.Location);
                         Scene.ShapeTypes.Push("Polygon");
                     }
+                }
+                else
+                {
+                    Scene.SelectShape(e.Location);
                 }
 
                 lblNumShapes.Text = "Total number of shapes used: " + Scene.CounterOfShapes;

@@ -33,8 +33,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.btnGame = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAboutUS = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@
             this.btnBiblioteka.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnBiblioteka.ForeColor = System.Drawing.Color.Black;
             this.btnBiblioteka.Image = ((System.Drawing.Image)(resources.GetObject("btnBiblioteka.Image")));
-            this.btnBiblioteka.Location = new System.Drawing.Point(102, 169);
+            this.btnBiblioteka.Location = new System.Drawing.Point(97, 169);
             this.btnBiblioteka.Name = "btnBiblioteka";
             this.btnBiblioteka.Size = new System.Drawing.Size(230, 200);
             this.btnBiblioteka.TabIndex = 0;
@@ -59,7 +59,7 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(94, 30);
+            this.lblName.Location = new System.Drawing.Point(74, 30);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(682, 136);
             this.lblName.TabIndex = 2;
@@ -88,34 +88,34 @@
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.btnGame);
             this.panel1.Controls.Add(this.btnBiblioteka);
-            this.panel1.Location = new System.Drawing.Point(213, 85);
+            this.panel1.Location = new System.Drawing.Point(206, 94);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(854, 501);
             this.panel1.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(342, 435);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnAboutUS
             // 
             this.btnAboutUS.BackColor = System.Drawing.Color.Gray;
             this.btnAboutUS.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAboutUS.Location = new System.Drawing.Point(342, 375);
+            this.btnAboutUS.Location = new System.Drawing.Point(328, 374);
             this.btnAboutUS.Name = "btnAboutUS";
             this.btnAboutUS.Size = new System.Drawing.Size(194, 54);
             this.btnAboutUS.TabIndex = 5;
             this.btnAboutUS.Text = "About Us";
             this.btnAboutUS.UseVisualStyleBackColor = false;
             this.btnAboutUS.Click += new System.EventHandler(this.btnAboutUS_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(328, 434);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 54);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuForm
             // 

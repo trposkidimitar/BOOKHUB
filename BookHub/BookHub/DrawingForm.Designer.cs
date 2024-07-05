@@ -74,6 +74,8 @@
             this.lblNumShapes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlDraw = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +94,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1262, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1262, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,7 +111,7 @@
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -173,7 +175,7 @@
             this.redoToolStripMenuItem});
             this.editToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 26);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
@@ -203,7 +205,7 @@
             this.triangleToolStripMenuItem});
             this.shapeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeToolStripMenuItem.Name = "shapeToolStripMenuItem";
-            this.shapeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.shapeToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
             this.shapeToolStripMenuItem.Text = "Shape";
             // 
             // circleToolStripMenuItem
@@ -260,7 +262,7 @@
             // 
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.colorToolStripMenuItem.Text = "Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
@@ -275,7 +277,7 @@
             this.toolStripTextBox1});
             this.sizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.sizeToolStripMenuItem.Name = "sizeToolStripMenuItem";
-            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(50, 26);
             this.sizeToolStripMenuItem.Text = "Size";
             // 
             // toolStripMenuItem2
@@ -333,7 +335,7 @@
             this.toolStripTextBox2});
             this.thicknessToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.thicknessToolStripMenuItem.Name = "thicknessToolStripMenuItem";
-            this.thicknessToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.thicknessToolStripMenuItem.Size = new System.Drawing.Size(85, 26);
             this.thicknessToolStripMenuItem.Text = "Thickness";
             // 
             // toolStripMenuItem7
@@ -382,9 +384,10 @@
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(97, 26);
             this.helpToolStripMenuItem.Text = "&Game rules";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
@@ -396,9 +399,9 @@
             this.lblBookTitle.Location = new System.Drawing.Point(658, 42);
             this.lblBookTitle.Name = "lblBookTitle";
             this.lblBookTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblBookTitle.Size = new System.Drawing.Size(135, 67);
+            this.lblBookTitle.Size = new System.Drawing.Size(175, 67);
             this.lblBookTitle.TabIndex = 1;
-            this.lblBookTitle.Text = "Title";
+            this.lblBookTitle.Text = "[Title]";
             this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timer1
@@ -411,7 +414,7 @@
             this.lblTimer.AutoSize = true;
             this.lblTimer.BackColor = System.Drawing.Color.Transparent;
             this.lblTimer.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.Location = new System.Drawing.Point(695, 192);
+            this.lblTimer.Location = new System.Drawing.Point(695, 193);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(98, 39);
             this.lblTimer.TabIndex = 2;
@@ -428,7 +431,7 @@
             // 
             this.btnStart.BackColor = System.Drawing.Color.Lime;
             this.btnStart.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnStart.Location = new System.Drawing.Point(693, 311);
+            this.btnStart.Location = new System.Drawing.Point(693, 299);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(126, 56);
             this.btnStart.TabIndex = 4;
@@ -440,7 +443,7 @@
             // 
             this.btnEnd.BackColor = System.Drawing.Color.Red;
             this.btnEnd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEnd.Location = new System.Drawing.Point(899, 311);
+            this.btnEnd.Location = new System.Drawing.Point(899, 299);
             this.btnEnd.Name = "btnEnd";
             this.btnEnd.Size = new System.Drawing.Size(126, 56);
             this.btnEnd.TabIndex = 5;
@@ -453,7 +456,7 @@
             this.lblNumShapes.AutoSize = true;
             this.lblNumShapes.BackColor = System.Drawing.Color.Transparent;
             this.lblNumShapes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblNumShapes.Location = new System.Drawing.Point(698, 448);
+            this.lblNumShapes.Location = new System.Drawing.Point(698, 388);
             this.lblNumShapes.Name = "lblNumShapes";
             this.lblNumShapes.Size = new System.Drawing.Size(233, 19);
             this.lblNumShapes.TabIndex = 6;
@@ -483,12 +486,39 @@
             this.pnlDraw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlDraw_MouseClick);
             this.pnlDraw.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDraw_MouseMove);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(697, 439);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "WARNING!!!";
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblWarning.Location = new System.Drawing.Point(699, 480);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(730, 19);
+            this.lblWarning.TabIndex = 10;
+            this.lblWarning.Text = "If you prefer the form to be in a color other than white, select your desired col" +
+    "or before drawing the form.";
+            // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 672);
+            this.Controls.Add(this.lblWarning);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlDraw);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNumShapes);
@@ -560,6 +590,8 @@
         private System.Windows.Forms.Label lblNumShapes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlDraw;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWarning;
     }
 }
 

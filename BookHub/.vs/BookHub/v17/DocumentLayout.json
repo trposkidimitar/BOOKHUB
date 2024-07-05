@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\",
+  "WorkspaceRootPath": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\user\\projectvp\\bookhub\\bookhub\\bookhub\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\bookhub\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\user\\projectvp\\bookhub\\bookhub\\bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MenuForm.cs",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\MenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\MenuForm.cs",
               "RelativeDocumentMoniker": "BookHub\\MenuForm.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\MenuForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\MenuForm.cs",
               "RelativeToolTip": "BookHub\\MenuForm.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAqwCcAAAAZAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAvwDMAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T21:45:33.384Z",
+              "WhenOpened": "2024-07-05T12:52:54.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scene.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\Scene.cs",
+              "RelativeDocumentMoniker": "BookHub\\Scene.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\Scene.cs",
+              "RelativeToolTip": "BookHub\\Scene.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAuwMcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T12:22:39.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\MenuForm.cs",
-              "RelativeDocumentMoniker": "BookHub\\MenuForm.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\MenuForm.cs [Design]",
-              "RelativeToolTip": "BookHub\\MenuForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:58:33.595Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DrawingForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\DrawingForm.cs",
+              "Title": "DrawingForm.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\DrawingForm.cs",
               "RelativeDocumentMoniker": "BookHub\\DrawingForm.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\DrawingForm.cs [Design]",
-              "RelativeToolTip": "BookHub\\DrawingForm.cs [Design]",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\DrawingForm.cs*",
+              "RelativeToolTip": "BookHub\\DrawingForm.cs*",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAswG0AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:41:15.132Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-05T12:21:57.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LibraryForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\LibraryForm.cs",
-              "RelativeDocumentMoniker": "BookHub\\LibraryForm.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\LibraryForm.cs [Design]",
-              "RelativeToolTip": "BookHub\\LibraryForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "DrawingForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\DrawingForm.cs",
+              "RelativeDocumentMoniker": "BookHub\\DrawingForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\DrawingForm.cs [Design]*",
+              "RelativeToolTip": "BookHub\\DrawingForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T14:12:07.238Z",
+              "WhenOpened": "2024-07-05T12:19:34.058Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -132,7 +132,7 @@ namespace BookHub
                         SelectedShape = shape;
                         shape.IsSelected = !shape.IsSelected;
                     }
-                    else //a form is selected
+                    else
                     {
                         SelectedShape.IsSelected = false;
                         SelectedShape = shape;

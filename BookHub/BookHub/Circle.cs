@@ -16,12 +16,9 @@ namespace BookHub
 
         public override void Draw(Graphics g)
         {
-            //if (IsSelected)
-            //{
             Pen p = new Pen(Color.Black, Thickness);
             g.DrawEllipse(p, this.Location.X - this.Size, this.Location.Y - this.Size, 2 * this.Size, 2 * this.Size);
             p.Dispose();
-            //}
 
             Brush brush = new SolidBrush(this.Color);
             g.FillEllipse(brush, this.Location.X - this.Size, this.Location.Y - this.Size, 2 * this.Size, 2 * this.Size);
