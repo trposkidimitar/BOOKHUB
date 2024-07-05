@@ -8,15 +8,6 @@ D:\ФИНКИ\IV-семестар\Визуелно програмирање\Visu
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.exe
 D:\ФИНКИ\IV-семестар\Визуелно програмирање\VisualApps\BookHub\BookHub\obj\Debug\BookHub.pdb
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe.config
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.pdb
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.AssemblyReference.cache
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.Properties.Resources.resources
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.GenerateResource.cache
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.exe
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.pdb
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.exe.config
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.exe
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\BookHub.pdb
@@ -32,9 +23,21 @@ C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.csproj.Up2
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.exe
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.pdb
 C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.LibraryForm.resources
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Newtonsoft.Json.dll
-C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.AssemblyReference.cache
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.DrawingForm.resources
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.LibraryForm.resources
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.MenuForm.resources
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.Properties.Resources.resources
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.GenerateResource.cache
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.CoreCompileInputs.cache
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe.config
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.exe
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\BookHub.pdb
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.dll
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.pdb
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.xml
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Newtonsoft.Json.xml
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.Up2Date
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.exe
+C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.pdb
