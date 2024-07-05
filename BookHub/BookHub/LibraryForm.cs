@@ -12,8 +12,10 @@ namespace BookHub
 {
     public partial class LibraryForm : Form
     {
+        public SceneLibrary SceneLibrary { get; set; }
         public LibraryForm()
         {
+            SceneLibrary = new SceneLibrary();
             InitializeComponent();
         }
 
@@ -26,6 +28,11 @@ namespace BookHub
         {
             DrawingForm drawingForm = new DrawingForm();
             drawingForm.ShowDialog();
+        }
+
+        private void LibraryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
