@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\user\\projectvp\\bookhub\\bookhub\\bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\user\\projectvp\\bookhub\\bookhub\\bookhub\\scenelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\scenelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\bookhub\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SceneLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
-              "RelativeDocumentMoniker": "BookHub\\SceneLibrary.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
-              "RelativeToolTip": "BookHub\\SceneLibrary.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAUwB8AAAA0AAAA",
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\Book.cs",
+              "RelativeDocumentMoniker": "BookHub\\Book.cs",
+              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\Book.cs",
+              "RelativeToolTip": "BookHub\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T18:32:44.443Z",
+              "WhenOpened": "2024-07-05T18:38:41.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LibraryForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\LibraryForm.cs",
-              "RelativeDocumentMoniker": "BookHub\\LibraryForm.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\LibraryForm.cs [Design]",
-              "RelativeToolTip": "BookHub\\LibraryForm.cs [Design]",
+              "Title": "SceneLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
+              "RelativeDocumentMoniker": "BookHub\\SceneLibrary.cs",
+              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
+              "RelativeToolTip": "BookHub\\SceneLibrary.cs",
+              "ViewState": "AQIAANoBAAAAAAAAAAAQwPIBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T18:29:56.943Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-05T18:32:44.443Z",
+              "EditorCaption": ""
             }
           ]
         }
