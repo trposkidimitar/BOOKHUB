@@ -63,7 +63,9 @@
             this.encyclopediaLexiconToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.journalMagazineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGame = new System.Windows.Forms.Button();
+            this.dgvBooks = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -101,18 +103,21 @@
             this.modernLiteratureToolStripMenuItem.Name = "modernLiteratureToolStripMenuItem";
             this.modernLiteratureToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.modernLiteratureToolStripMenuItem.Text = "Modern literature";
+            this.modernLiteratureToolStripMenuItem.Click += new System.EventHandler(this.modernLiteratureToolStripMenuItem_Click);
             // 
             // classicsToolStripMenuItem
             // 
             this.classicsToolStripMenuItem.Name = "classicsToolStripMenuItem";
             this.classicsToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.classicsToolStripMenuItem.Text = "Classics";
+            this.classicsToolStripMenuItem.Click += new System.EventHandler(this.classicsToolStripMenuItem_Click);
             // 
             // dramaToolStripMenuItem
             // 
             this.dramaToolStripMenuItem.Name = "dramaToolStripMenuItem";
             this.dramaToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.dramaToolStripMenuItem.Text = "Drama";
+            this.dramaToolStripMenuItem.Click += new System.EventHandler(this.dramaToolStripMenuItem_Click);
             // 
             // novelsToolStripMenuItem
             // 
@@ -141,36 +146,42 @@
             this.adventureActionToolStripMenuItem.Name = "adventureActionToolStripMenuItem";
             this.adventureActionToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.adventureActionToolStripMenuItem.Text = "Adventure && Action";
+            this.adventureActionToolStripMenuItem.Click += new System.EventHandler(this.adventureActionToolStripMenuItem_Click);
             // 
             // romanceToolStripMenuItem
             // 
             this.romanceToolStripMenuItem.Name = "romanceToolStripMenuItem";
             this.romanceToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.romanceToolStripMenuItem.Text = "Romance";
+            this.romanceToolStripMenuItem.Click += new System.EventHandler(this.romanceToolStripMenuItem_Click);
             // 
             // horrorToolStripMenuItem
             // 
             this.horrorToolStripMenuItem.Name = "horrorToolStripMenuItem";
             this.horrorToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.horrorToolStripMenuItem.Text = "Horror";
+            this.horrorToolStripMenuItem.Click += new System.EventHandler(this.horrorToolStripMenuItem_Click);
             // 
             // comedyToolStripMenuItem
             // 
             this.comedyToolStripMenuItem.Name = "comedyToolStripMenuItem";
             this.comedyToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.comedyToolStripMenuItem.Text = "Comedy";
+            this.comedyToolStripMenuItem.Click += new System.EventHandler(this.comedyToolStripMenuItem_Click);
             // 
             // scienceFictionFantasyToolStripMenuItem
             // 
             this.scienceFictionFantasyToolStripMenuItem.Name = "scienceFictionFantasyToolStripMenuItem";
             this.scienceFictionFantasyToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.scienceFictionFantasyToolStripMenuItem.Text = "Science Fiction && Fantasy";
+            this.scienceFictionFantasyToolStripMenuItem.Click += new System.EventHandler(this.scienceFictionFantasyToolStripMenuItem_Click);
             // 
             // historicFictionToolStripMenuItem
             // 
             this.historicFictionToolStripMenuItem.Name = "historicFictionToolStripMenuItem";
             this.historicFictionToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.historicFictionToolStripMenuItem.Text = "Historic Fiction";
+            this.historicFictionToolStripMenuItem.Click += new System.EventHandler(this.historicFictionToolStripMenuItem_Click);
             // 
             // postryToolStripMenuItem
             // 
@@ -187,12 +198,14 @@
             this.macedonianPoetryToolStripMenuItem.Name = "macedonianPoetryToolStripMenuItem";
             this.macedonianPoetryToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.macedonianPoetryToolStripMenuItem.Text = "Macedonian Poetry";
+            this.macedonianPoetryToolStripMenuItem.Click += new System.EventHandler(this.macedonianPoetryToolStripMenuItem_Click);
             // 
             // foreignPoetryToolStripMenuItem
             // 
             this.foreignPoetryToolStripMenuItem.Name = "foreignPoetryToolStripMenuItem";
             this.foreignPoetryToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.foreignPoetryToolStripMenuItem.Text = "Foreign poetry";
+            this.foreignPoetryToolStripMenuItem.Click += new System.EventHandler(this.foreignPoetryToolStripMenuItem_Click);
             // 
             // lifestyleToolStripMenuItem
             // 
@@ -210,18 +223,21 @@
             this.travelToolStripMenuItem.Name = "travelToolStripMenuItem";
             this.travelToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.travelToolStripMenuItem.Text = "Travel";
+            this.travelToolStripMenuItem.Click += new System.EventHandler(this.travelToolStripMenuItem_Click);
             // 
             // sportFitnessToolStripMenuItem
             // 
             this.sportFitnessToolStripMenuItem.Name = "sportFitnessToolStripMenuItem";
             this.sportFitnessToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.sportFitnessToolStripMenuItem.Text = "Sport && Fitness";
+            this.sportFitnessToolStripMenuItem.Click += new System.EventHandler(this.sportFitnessToolStripMenuItem_Click);
             // 
             // cookbooksToolStripMenuItem
             // 
             this.cookbooksToolStripMenuItem.Name = "cookbooksToolStripMenuItem";
             this.cookbooksToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.cookbooksToolStripMenuItem.Text = "Cookbooks";
+            this.cookbooksToolStripMenuItem.Click += new System.EventHandler(this.cookbooksToolStripMenuItem_Click);
             // 
             // socialAndHumanisticSciencesToolStripMenuItem
             // 
@@ -238,12 +254,14 @@
             this.economyToolStripMenuItem.Name = "economyToolStripMenuItem";
             this.economyToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.economyToolStripMenuItem.Text = "Economy";
+            this.economyToolStripMenuItem.Click += new System.EventHandler(this.economyToolStripMenuItem_Click);
             // 
             // otherToolStripMenuItem1
             // 
             this.otherToolStripMenuItem1.Name = "otherToolStripMenuItem1";
             this.otherToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
             this.otherToolStripMenuItem1.Text = "Other";
+            this.otherToolStripMenuItem1.Click += new System.EventHandler(this.otherToolStripMenuItem1_Click);
             // 
             // scienceToolStripMenuItem
             // 
@@ -260,12 +278,14 @@
             this.medicineToolStripMenuItem.Name = "medicineToolStripMenuItem";
             this.medicineToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.medicineToolStripMenuItem.Text = "Medicine";
+            this.medicineToolStripMenuItem.Click += new System.EventHandler(this.medicineToolStripMenuItem_Click);
             // 
             // otherToolStripMenuItem
             // 
             this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
             this.otherToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.otherToolStripMenuItem.Text = "Other";
+            this.otherToolStripMenuItem.Click += new System.EventHandler(this.otherToolStripMenuItem_Click);
             // 
             // artToolStripMenuItem
             // 
@@ -283,18 +303,21 @@
             this.musicToolStripMenuItem.Name = "musicToolStripMenuItem";
             this.musicToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.musicToolStripMenuItem.Text = "Music";
+            this.musicToolStripMenuItem.Click += new System.EventHandler(this.musicToolStripMenuItem_Click);
             // 
             // filmThToolStripMenuItem
             // 
             this.filmThToolStripMenuItem.Name = "filmThToolStripMenuItem";
             this.filmThToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.filmThToolStripMenuItem.Text = "Film && Stagecraft";
+            this.filmThToolStripMenuItem.Click += new System.EventHandler(this.filmThToolStripMenuItem_Click);
             // 
             // architectureToolStripMenuItem
             // 
             this.architectureToolStripMenuItem.Name = "architectureToolStripMenuItem";
             this.architectureToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.architectureToolStripMenuItem.Text = "Architecture";
+            this.architectureToolStripMenuItem.Click += new System.EventHandler(this.architectureToolStripMenuItem_Click);
             // 
             // dictionaryToolStripMenuItem
             // 
@@ -311,12 +334,14 @@
             this.encyclopediaLexiconToolStripMenuItem.Name = "encyclopediaLexiconToolStripMenuItem";
             this.encyclopediaLexiconToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.encyclopediaLexiconToolStripMenuItem.Text = "Encyclopedia && Lexicon";
+            this.encyclopediaLexiconToolStripMenuItem.Click += new System.EventHandler(this.encyclopediaLexiconToolStripMenuItem_Click);
             // 
             // journalMagazineToolStripMenuItem
             // 
             this.journalMagazineToolStripMenuItem.Name = "journalMagazineToolStripMenuItem";
             this.journalMagazineToolStripMenuItem.Size = new System.Drawing.Size(250, 26);
             this.journalMagazineToolStripMenuItem.Text = "Journal && Magazine";
+            this.journalMagazineToolStripMenuItem.Click += new System.EventHandler(this.journalMagazineToolStripMenuItem_Click);
             // 
             // btnGame
             // 
@@ -329,6 +354,17 @@
             this.btnGame.UseVisualStyleBackColor = false;
             this.btnGame.Click += new System.EventHandler(this.btnGame_Click);
             // 
+            // dgvBooks
+            // 
+            this.dgvBooks.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.dgvBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBooks.Location = new System.Drawing.Point(12, 44);
+            this.dgvBooks.Name = "dgvBooks";
+            this.dgvBooks.RowHeadersWidth = 51;
+            this.dgvBooks.RowTemplate.Height = 24;
+            this.dgvBooks.Size = new System.Drawing.Size(1151, 616);
+            this.dgvBooks.TabIndex = 2;
+            // 
             // LibraryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,6 +373,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 672);
+            this.Controls.Add(this.dgvBooks);
             this.Controls.Add(this.btnGame);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -347,6 +384,7 @@
             this.Load += new System.EventHandler(this.LibraryForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +426,6 @@
         private System.Windows.Forms.ToolStripMenuItem encyclopediaLexiconToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem journalMagazineToolStripMenuItem;
         private System.Windows.Forms.Button btnGame;
+        private System.Windows.Forms.DataGridView dgvBooks;
     }
 }

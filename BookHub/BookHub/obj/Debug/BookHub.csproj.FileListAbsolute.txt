@@ -41,3 +41,9 @@ C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\bin\Debug\Newtonsoft.Json.xml
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.csproj.Up2Date
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.exe
 C:\Users\User\ProjectVP\BOOKHUB\BookHub\BookHub\obj\Debug\BookHub.pdb
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.dll
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.pdb
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\bin\Debug\Microsoft.SqlServer.Server.xml
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.BookImage.resources
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.BuyForm.resources
+C:\Users\dimit\source\repos\Project\BookHub\BookHub\obj\Debug\BookHub.ReturnForm.resources

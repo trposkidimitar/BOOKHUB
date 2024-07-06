@@ -1,14 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\",
+  "WorkspaceRootPath": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\user\\projectvp\\bookhub\\bookhub\\bookhub\\scenelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\scenelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\scenelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\bookhub\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\buyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\buyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\bookimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\bookimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\bookimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\bookimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\buyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\buyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\libraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|c:\\users\\dimit\\source\\repos\\project\\bookhub\\bookhub\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25BFD41-64FA-4F95-9528-9BB1C4C96AD5}|BookHub\\BookHub.csproj|solutionrelative:bookhub\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\Book.cs",
-              "RelativeDocumentMoniker": "BookHub\\Book.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\Book.cs",
-              "RelativeToolTip": "BookHub\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "BookImage.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BookImage.cs",
+              "RelativeDocumentMoniker": "BookHub\\BookImage.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BookImage.cs",
+              "RelativeToolTip": "BookHub\\BookImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T18:38:41.485Z",
+              "WhenOpened": "2024-07-06T18:34:28.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookImage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BookImage.cs",
+              "RelativeDocumentMoniker": "BookHub\\BookImage.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BookImage.cs [Design]",
+              "RelativeToolTip": "BookHub\\BookImage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:34:27.344Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\Book.cs",
+              "RelativeDocumentMoniker": "BookHub\\Book.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\Book.cs",
+              "RelativeToolTip": "BookHub\\Book.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:11:42.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReturnForm.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "BookHub\\ReturnForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\ReturnForm.cs",
+              "RelativeToolTip": "BookHub\\ReturnForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:03:32.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BuyForm.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BuyForm.cs",
+              "RelativeDocumentMoniker": "BookHub\\BuyForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BuyForm.cs",
+              "RelativeToolTip": "BookHub\\BuyForm.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA1wCYAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T17:42:08.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LibraryForm.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\LibraryForm.cs",
+              "RelativeDocumentMoniker": "BookHub\\LibraryForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\LibraryForm.cs",
+              "RelativeToolTip": "BookHub\\LibraryForm.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAkwHAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:05:43.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SceneLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\SceneLibrary.cs",
               "RelativeDocumentMoniker": "BookHub\\SceneLibrary.cs",
-              "ToolTip": "C:\\Users\\User\\ProjectVP\\BOOKHUB\\BookHub\\BookHub\\SceneLibrary.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\SceneLibrary.cs",
               "RelativeToolTip": "BookHub\\SceneLibrary.cs",
-              "ViewState": "AQIAANoBAAAAAAAAAAAQwPIBAAAAAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAA9wCUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T18:32:44.443Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuyForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BuyForm.cs",
+              "RelativeDocumentMoniker": "BookHub\\BuyForm.cs",
+              "ToolTip": "C:\\Users\\dimit\\source\\repos\\Project\\BookHub\\BookHub\\BuyForm.cs [Design]",
+              "RelativeToolTip": "BookHub\\BuyForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:23:44.332Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

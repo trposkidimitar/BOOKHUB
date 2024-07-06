@@ -67,6 +67,10 @@ namespace BookHub
             timer1.Start();
             string bookTitle = GenerateBookTitle();
             lblBookTitle.Text = bookTitle;
+            if (timer1.Enabled)
+            {
+                btnStart.Enabled = false;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -93,7 +97,14 @@ namespace BookHub
         private void btnEnd_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / (300.0 - TimeLeft)) * 100) + ".");
+            if (TimeLeft == 300)
+            {
+                MessageBox.Show("Game over!\n Total points won: 0.");
+            }
+            else
+            {
+                MessageBox.Show("Game over!\n Total points won: " + (int)((Scene.CounterOfShapes / (300.0 - TimeLeft)) * 100) + ".");
+            }
             this.Close();
         }
 
